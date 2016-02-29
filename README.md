@@ -9,9 +9,9 @@ First if you want to read in my file. You can do it with the command: read.table
 I have started by reading in the data file by file. 
 
 I unpacked the data in my working directory. I copied the following files to my working directory:
-subject_test.txt
-X_test.txt
-Y_test.txt
+- subject_test.txt
+- X_test.txt
+- Y_test.txt
 - subset_train.txt
 - X_train.txt
 - Y_train.txt
@@ -19,17 +19,25 @@ Y_test.txt
 - activity_labels.txt
 
 * I start with reading in the data for the test set. I gave them the variables:
+
 testSubject: contains the subjects of the testset, subject_test.txt
+
 testX: are the measures of the testset, X_test.txt
+
 testy: are the activities of the testset, Y_test.txt
 
 * Then I do the same for the training set. I gave them the variables:
+
 trainSubject: contains the subjects of the trainingset, subject_train.txt
+
 trainX: are the measures of the trainingset, X_train.txt
+
 trainY: are the activities of the trainingset, Y_train.txt
 
-* I read the meta data in R of the sets. 
+* I read the meta data in R of the sets.
+
 Features: contains the data from features.txt
+
 Activities: contains the data from activity_labels.txt
 
 ## The steps of the assignment
@@ -40,17 +48,17 @@ First I load a couple of libraries because I need them for running the program.
 I had some issues with merging the data. With the cbind command I used to merge the data sets I had multiple columns with the same name. V1 for example. Therefore I changed the order of the 5 steps to get it done.
 I first did a part of step 4 so I had descriptive labels so I could use them to merge the different data frames.
 
-I changed the columns of the following data frames:
+I renamed the columns of the following data frames:
 
 activities: activitynr and activity
 
 features: number, feature
 
-test and trainSubject: subject 
+testSubject and trainSubject: subject 
 
-test and train Y: activitynr
+testY and trainY: activitynr
 
-test and train X: all the names of the features data table. 
+testX and trainX: all the names of the features data table. 
 
 ### 1. Merges the training and the test sets to create one data set.
 I merged the 3 different files of the 2 sets with a cbind because there where no columns to merge them I think.
