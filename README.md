@@ -1,4 +1,4 @@
-# cleaning and tidy data project
+# Readme cleaning and tidy data project
 
 in this document I will explain the steps to get a clean and tidy data set.
 
@@ -8,10 +8,10 @@ First if you want to read in my file. You can do it with the command: read.table
 
 I have started by reading in the data file by file. 
 
-* I unpacked the data in my working directory. I copied the following files to my working directory:
-- subject_test.txt
-- X_test.txt
-- Y_test.txt
+I unpacked the data in my working directory. I copied the following files to my working directory:
+subject_test.txt
+X_test.txt
+Y_test.txt
 - subset_train.txt
 - X_train.txt
 - Y_train.txt
